@@ -1,0 +1,71 @@
+.navbar{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.mid{
+    padding: 20px 7% 20px 7%;
+}
+.mid-td{
+    width:50%; 
+    height:auto;
+    vertical-align: top;
+}
+.keyfeatures{
+    text-align: left; 
+    padding-top: 100px;
+}
+li:nth-child(1)::marker {
+    content: url("/assets/codeico.svg");
+}
+li:nth-child(2)::marker {
+    content: url("/assets/swico.svg");
+}
+li:nth-child(3)::marker {
+    content: url("/assets/keyico.svg");
+}
+ul{
+    padding-left: 33px;
+}
+.keyfeatures-listitem{
+    font-size: 25px; 
+    line-height: 2; 
+    font-weight: 700; 
+    padding-left: 25px;
+}
+.keyfeatures-listitem-filler{
+    font-size: 18px; 
+    font-weight: 700;
+    color: #798088;
+    width: 50%;
+}
+.feedbackinput{
+    padding-left: 10px;
+    border-style: none;
+    width: 100%;
+    height: 40px;
+    background-color: #F8F9FA;
+    font-size: 18px;
+    color: #8B9299;
+    font-weight: 400;
+    &.message{
+        height: 80px;
+        padding-bottom: 40px;
+    }
+}
+.fileupload {
+    width: 100%;
+}
+::-webkit-file-upload-button {
+    border-style: none;
+    padding: 8px 18px 8px 18px;
+    background-color: #E9ECEF;
+    color: #36393D;
+    font-weight: 700;
+    border-style: none;
+}
+.submitbutton{
+    float: right;
+    color: white;
+    border-radius: 5px;
+    background-color: #0E6FFD;
+}

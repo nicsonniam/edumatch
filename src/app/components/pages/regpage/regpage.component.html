@@ -1,0 +1,32 @@
+<div class="maindiv">
+    <table>
+        <tr>
+            <td style="width: 50%;">
+                <div style="padding: 0 10% 0 30%; height: 100%;">
+                    <button class="white fakebutton">EduMatch</button>
+                    <button style="float: right;" class="white">Sign in</button>
+                    <br><br><br><br>
+                    <p>Sign Up</p>
+                    <h1 style="font-size: 30px; font-weight: 400;">Create an account</h1>
+                    <form #regUser="ngForm" (ngSubmit)="register(regUser)">
+                        <input type="text" placeholder="First Name" name="firstname" class="reginput" ngModel/>&nbsp;&nbsp;&nbsp;
+                        <input type="text" placeholder="Last Name" name="lastname" class="reginput" ngModel/><br><br>
+                        <input type="email" placeholder="name@email.com" name="email" class="reginput fullwidth" ngModel/>
+                        <button class="inputsidebutton"><i class="fa fa-at"></i></button><br><br>
+                        <input type="password" placeholder="Enter your password" name="password" class="reginput fullwidth" ngModel/>
+                        <button class="inputsidebutton"><i class="fa fa-lock"></i></button><br><br>
+                        <button type="submit" class="signinbutton">Sign up</button>
+                    </form>
+                    <br><br>
+                    <div class="tncdiv">
+                        <p><a class="tncanchor">Police privacy</a> and <a class="tncanchor">Terms of Use</a></p>
+                    </div>
+                    <br><br><br><br><br><br><br><br>
+                </div>
+            </td>
+            <td style="width: 50%;">
+                <img style="width:100%;"src="assets/mandogimg.JPG"/> 
+            </td>
+        </tr>
+    </table>
+</div>

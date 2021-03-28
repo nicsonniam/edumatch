@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 30 25">
+  <g id="swico" transform="translate(-26 -138)">
+    <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(26 138)" fill="rgba(255,255,255,0)" stroke="#0e6ffd" stroke-width="2.5">
+      <rect width="30" height="8" rx="1" stroke="none"/>
+      <rect x="1.25" y="1.25" width="27.5" height="5.5" rx="0.25" fill="none"/>
+    </g>
+    <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(47 148)" fill="rgba(255,255,255,0)" stroke="#0e6ffd" stroke-width="2.5">
+      <rect width="9" height="15" rx="1" stroke="none"/>
+      <rect x="1.25" y="1.25" width="6.5" height="12.5" rx="0.25" fill="none"/>
+    </g>
+    <g id="Rectangle_4" data-name="Rectangle 4" transform="translate(26 148)" fill="rgba(255,255,255,0)" stroke="#0e6ffd" stroke-width="2.5">
+      <rect width="19" height="15" rx="1" stroke="none"/>
+      <rect x="1.25" y="1.25" width="16.5" height="12.5" rx="0.25" fill="none"/>
+    </g>
+  </g>
+</svg>

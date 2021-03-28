@@ -1,0 +1,46 @@
+.maindiv{
+    
+} 
+.fakebutton{
+    padding-left:0px; 
+    text-decoration: underline; 
+    border-style: none; 
+    color: #0E6FFD; 
+    float: left;
+}
+.reginput{
+    padding-left: 10px;
+    border-style: solid;
+    border-color: #E9ECEF;
+    border-radius: 5px;
+    border-width: 1px;
+    height: 40px;
+    font-size: 18px;
+    width: 48%;
+    color: gray;
+    font-weight: 400;
+    &.fullwidth{
+        width: 91%;
+        border-radius: 5px 0 0 5px;
+    }
+} 
+.inputsidebutton{
+    width:9%;
+    float: right; 
+    height: 40px; 
+    border-style: none;
+    margin:0;
+    border-radius: 0 5px 5px 0;
+    cursor: default;
+    background-color: #E9ECEF;
+}
+.signinbutton{
+    width: 100%;
+    border-radius: 5px;
+    background-color: #0E6FFD;
+    color: white;
+}
+.tncanchor{
+    color:#0E6FFD;
+    text-decoration: underline;
+}

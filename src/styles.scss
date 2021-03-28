@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Lato', sans-serif;
+    font-weight:700;
+}
+a,p,button,input,label{
+    font-family: 'Lato', sans-serif;
+}
+a{
+    cursor: pointer;
+}
+html, body { 
+    height: 100%;
+}
+body {
+    margin: 0; 
+    font-family: 'Lato', sans-serif;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+button{
+    border-color: #0E6FFD;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 18px 8px 18px;
+    &.blue{
+        background-color: #0E6FFD;
+        color: #fff;
+        border-radius: 5px;
+    }
+    &.white{
+        background-color: #fff;
+        color: #0E6FFD;
+        border-radius: 5px;
+    }
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30.432" height="34.104" viewBox="0 0 30.432 34.104">
+  <g id="keyico" transform="translate(-45.568 -130)">
+    <g id="Path_3" data-name="Path 3" transform="translate(56.233 130)" fill="#fff">
+      <path d="M 9.883721351623535 18.51744079589844 C 5.123071193695068 18.51744079589844 1.250001311302185 14.64437103271484 1.250001311302185 9.883721351623535 C 1.250001311302185 5.123071193695068 5.123071193695068 1.250001311302185 9.883721351623535 1.250001311302185 C 14.64437103271484 1.250001311302185 18.51744079589844 5.123071193695068 18.51744079589844 9.883721351623535 C 18.51744079589844 14.64437103271484 14.64437103271484 18.51744079589844 9.883721351623535 18.51744079589844 Z" stroke="none"/>
+      <path d="M 9.883721351623535 2.500001907348633 C 5.812321662902832 2.500001907348633 2.500001907348633 5.812321662902832 2.500001907348633 9.883721351623535 C 2.500001907348633 13.95512199401855 5.812321662902832 17.26744079589844 9.883721351623535 17.26744079589844 C 13.95512199401855 17.26744079589844 17.26744079589844 13.95512199401855 17.26744079589844 9.883721351623535 C 17.26744079589844 5.812321662902832 13.95512199401855 2.500001907348633 9.883721351623535 2.500001907348633 M 9.883721351623535 1.9073486328125e-06 C 15.34235191345215 1.9073486328125e-06 19.76744079589844 4.425091743469238 19.76744079589844 9.883721351623535 C 19.76744079589844 15.34235191345215 15.34235191345215 19.76744079589844 9.883721351623535 19.76744079589844 C 4.425091743469238 19.76744079589844 1.9073486328125e-06 15.34235191345215 1.9073486328125e-06 9.883721351623535 C 1.9073486328125e-06 4.425091743469238 4.425091743469238 1.9073486328125e-06 9.883721351623535 1.9073486328125e-06 Z" stroke="none" fill="#0e6ffd"/>
+    </g>
+    <line id="Line_3" data-name="Line 3" x1="10.913" y2="10.913" transform="translate(46.818 142.277)" fill="none" stroke="#0e6ffd" stroke-width="2.5"/>
+    <line id="Line_5" data-name="Line 5" y1="10.913" x2="10.913" transform="translate(52.275 147.734)" fill="none" stroke="#0e6ffd" stroke-width="2.5"/>
+    <line id="Line_6" data-name="Line 6" y2="7.094" transform="translate(46.818 152.372)" fill="none" stroke="#0e6ffd" stroke-width="2.5"/>
+    <line id="Line_7" data-name="Line 7" transform="translate(71.373 164.104)" fill="none" stroke="#0e6ffd" stroke-width="2.5"/>
+    <line id="Line_8" data-name="Line 8" x1="7.094" transform="translate(46 158.647)" fill="none" stroke="#0e6ffd" stroke-width="2.5"/>
+    <line id="Line_9" data-name="Line 9" y1="5.457" x2="5.457" transform="translate(57.725 143.641)" fill="none" stroke="#fff" stroke-width="2.5"/>
+    <line id="Line_10" data-name="Line 10" y1="5.457" x2="5.457" transform="translate(55.156 143.527)" fill="none" stroke="#fff" stroke-width="2.5"/>
+    <path id="Path_2" data-name="Path 2" d="M0,0,1.961.6l1.79,1.236L4.945,3.5l.512,1.961" transform="translate(64.552 135.457)" fill="none" stroke="#0e6ffd" stroke-width="2.5"/>
+    <line id="Line_11" data-name="Line 11" y1="5.457" x2="5.457" transform="translate(56.384 142.277)" fill="none" stroke="#fff" stroke-width="2.5"/>
+    <line id="Line_12" data-name="Line 12" y1="5.457" x2="5.457" transform="translate(57.134 143.027)" fill="none" stroke="#fff" stroke-width="2.5"/>
+    <line id="Line_13" data-name="Line 13" y1="5.457" x2="5.457" transform="translate(56.384 142.277)" fill="none" stroke="#fff" stroke-width="2.5"/>
+    <line id="Line_14" data-name="Line 14" y1="5.457" x2="5.457" transform="translate(57.884 143.641)" fill="none" stroke="#fff" stroke-width="2.5"/>
+  </g>
+</svg>
