@@ -32,16 +32,16 @@ import { FormsModule }   from '@angular/forms';
     BrowserAnimationsModule,
     RouterModule.forRoot([
       {
-        path: '', 
+        path: '/', 
         component: LandingpageComponent
       },
       {
-        path: 'login', 
+        path: '/login', 
         component: LoginpageComponent
       },
       {
         path: 
-        'registration' ,
+        '/registration' ,
         component: RegpageComponent
       },
       {
