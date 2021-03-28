@@ -14,25 +14,14 @@
     text-align: left; 
     padding-top: 100px;
 }
-li:nth-child(1)::marker {
-    content: url("/assets/codeico.svg");
-}
-li:nth-child(2)::marker {
-    content: url("/assets/swico.svg"); 
-}
-li:nth-child(3)::marker {
-    content: url("/assets/keyico.svg"); 
-}
-ul{
-    padding-left: 33px;
-}
 .keyfeatures-listitem{
     font-size: 25px; 
-    line-height: 2; 
+    line-height: 1; 
     font-weight: 700; 
-    padding-left: 25px;
+    padding-left: 80px;
 }
 .keyfeatures-listitem-filler{
+    padding-left: 80px;
     font-size: 18px; 
     font-weight: 700;
     color: #798088;
