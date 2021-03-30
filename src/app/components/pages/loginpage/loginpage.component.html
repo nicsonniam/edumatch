@@ -13,11 +13,11 @@
                 <form #login="ngForm" (ngSubmit)="logIn(login)">
                     <p class="errmsg alignleft" *ngIf="emVal">*Email required!</p>
                     <input type="text" name="email" placeholder="name@example.com" class="logininput" ngModel/>
-                    <button class="inputsidebutton" [disabled]="true"><i class="fa fa-at"></i></button>
+                    <div class="inputsidebutton"><i class="fa fa-at"></i></div>
                     <br><br>
                     <p class="errmsg alignleft" *ngIf="pwVal">*Password required!</p>
                     <input type="password" name="password" placeholder= "Enter your password" class="logininput" ngModel/> 
-                    <button class="inputsidebutton" [disabled]="true"><i class="fa fa-lock"></i></button>
+                    <div class="inputsidebutton"><i class="fa fa-lock"></i></div>
                     <br><br>
                     <span class="errmsg">{{this.errMessage}}</span>
                     <div *ngIf="this.errMessage!==''">

@@ -14,10 +14,10 @@
             <input type="text" placeholder="Last Name" name="last_name" [ngClass]="{'reginput': large,'reginput-smaller': medium, 'reginput-smallest': small}" ngModel/><br><br>
             <p class="errmsg"*ngIf="emVal">*Email  is required!</p>
             <input type="email" placeholder="name@email.com" name="email" [ngClass]="{'reginput-fullwidth': large,'reginput-fullwidth-smaller': medium, 'reginput-fullwidth-smallest': small}" ngModel/>
-            <button [disabled]="true" class="inputsidebutton"><i class="fa fa-at"></i></button><br><br>
+            <div class="inputsidebutton"><i class="fa fa-at"></i></div><br><br>
             <p class="errmsg"*ngIf="pwVal">*Password is required!</p>
             <input type="password" placeholder="Enter your password" name="password" [ngClass]="{'reginput-fullwidth': large,'reginput-fullwidth-smaller': medium, 'reginput-fullwidth-smallest': small}" ngModel/>
-            <button [disabled]="true" class="inputsidebutton"><i class="fa fa-lock"></i></button><br><br>
+            <div class="inputsidebutton"><i class="fa fa-lock"></i></div><br><br>
             <button type="submit" class="signinbutton">Sign up</button>
             <br><br>
             <div *ngIf="large||medium">
