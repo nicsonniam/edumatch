@@ -2,11 +2,36 @@
     padding-left: 10%;
     padding-right: 10%;
 }
+.edumatch{
+    float:left;
+    font-size: 15px;
+    color: #0E6FFD;
+    &.smaller{
+        font-size: 13px;
+    }
+    &.mobile{
+        float: none;
+    }
+}
 .footer-links{
     font-weight: 900;
     font-size: 20px;
     color: black;
     padding: 0 25px 0 25px;
+    &.smaller{
+        font-size: 18px;
+        padding: 0 20px 0 20px;
+    }
+    &.smallest{
+        font-size: 14px;
+        padding: 0 15px 0 15px;
+    }
+    &.wider{
+        padding: 0 25px 0 25px;
+    }
+    &.compressed{
+        padding: 0 8px 0 8px;
+    }
 }
 .footer-img{
     height: 20px;

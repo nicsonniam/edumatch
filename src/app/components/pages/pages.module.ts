@@ -6,24 +6,24 @@ import { LoginpageComponent } from './loginpage/loginpage.component';
 import { NotfoundpageComponent } from './notfoundpage/notfoundpage.component';
 import { RegpageComponent } from './regpage/regpage.component';
 import {ReactiveFormsModule} from '@angular/forms';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule }   from '@angular/forms'; 
 
 
- 
+  
 @NgModule({
   declarations: [
     LandingpageComponent,
     LoginpageComponent,
     RegpageComponent,
-    NotfoundpageComponent
-  ],
+    NotfoundpageComponent 
+  ], 
   imports: [
-    CommonModule,
-    FormsModule,
+    CommonModule,   
+    FormsModule,  
     ReactiveFormsModule, 
     RouterModule.forRoot([
       {
-        path: '',  
+        path: '',   
         component: LandingpageComponent
       },
       {

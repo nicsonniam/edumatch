@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class PostsService {
-  url = "https://nicson-test.6ac1e6al400ce.ap-southeast-1.cs.amazonlightsail.com/"
+  postUrl = "https://nicson-test.6ac1e6al400ce.ap-southeast-1.cs.amazonlightsail.com/auth/users/"
 
   constructor(
     private http:HttpClient
@@ -13,6 +13,6 @@ export class PostsService {
 
    }
    public registerUser(data){
-     return this.http.post(this.url,data);
+     return this.http.post(this.postUrl,data);
    }
 }

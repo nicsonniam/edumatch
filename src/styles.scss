@@ -24,6 +24,9 @@ body {
 .right{
     float: right;
 }
+.center{
+    text-align: center;
+}
 button{
     border-color: #0E6FFD;
     border-width: 1px;
@@ -40,6 +43,11 @@ button{
         background-color: #fff;
         color: #0E6FFD;
         border-radius: 5px;
+    }
+    &.smaller{
+        font-size: 12px;
+        padding: 4px 9px 4px 9px;
+        height:30px
     }
 }
 html, body { height: 100%; }

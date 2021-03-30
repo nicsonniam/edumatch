@@ -1,32 +1,65 @@
-<div class="maindiv">
-    <table>
-        <tr>
-            <td style="width: 50%;">
-                <div style="padding: 0 10% 0 30%; height: 100%;">
-                    <button routerLink="/" class="white fakebutton">EduMatch</button>
-                    <button style="float: right;" class="white">Sign in</button>
-                    <br><br><br><br>
-                    <p>Sign Up</p>
-                    <h1 style="font-size: 30px; font-weight: 400;">Create an account</h1>
-                    <form #regUser="ngForm" (ngSubmit)="register(regUser)">
-                        <input type="text" placeholder="First Name" name="firstname" class="reginput" ngModel/>&nbsp;&nbsp;&nbsp;
-                        <input type="text" placeholder="Last Name" name="lastname" class="reginput" ngModel/><br><br>
-                        <input type="email" placeholder="name@email.com" name="email" class="reginput fullwidth" ngModel/>
-                        <button class="inputsidebutton"><i class="fa fa-at"></i></button><br><br>
-                        <input type="password" placeholder="Enter your password" name="password" class="reginput fullwidth" ngModel/>
-                        <button class="inputsidebutton"><i class="fa fa-lock"></i></button><br><br>
-                        <button type="submit" class="signinbutton">Sign up</button>
-                    </form>
-                    <br><br>
-                    <div class="tncdiv">
-                        <p><a class="tncanchor">Police privacy</a> and <a class="tncanchor">Terms of Use</a></p>
-                    </div>
-                    <br><br><br><br><br><br><br><br>
-                </div>
-            </td>
-            <td style="width: 50%;">
-                <img style="width:100%;"src="assets/mandogimg.png"/> 
-            </td>
-        </tr>
-    </table>
+<div *ngIf="!createSuccess" [ngClass]="{'maindiv': large,'maindiv2': medium, 'maindiv-mobile': small}">
+    <div [ngClass]="{'formdiv': large,'formdiv-smaller': medium, 'formdiv-smallest': small}">
+        <br>
+        <button routerLink="/" class="white fakebutton">EduMatch</button>
+        <button routerLink="/login" class="white right">Sign in</button>
+        <br><br><br><br>
+        <p>Sign Up</p>
+        <h1 [ngClass]="{'formtitle': large,'formtitle-smaller': medium, 'formtitle-smallest': small}">Create an account</h1>
+        <form #regUser="ngForm" (ngSubmit)="register(regUser)">
+            <p class="errmsg" *ngIf="fnVal&&lnVal">*First and last name required!</p>
+            <p class="errmsg"*ngIf="fnVal===true&&lnVal===false"> *First name is required!</p>
+            <p class="errmsg"*ngIf="fnVal===false&&lnVal===true"> *Last name is required!</p>
+            <input type="text" placeholder="First Name" name="first_name" [ngClass]="{'reginput': large,'reginput-smaller': medium, 'reginput-smallest': small}" ngModel/>&nbsp;&nbsp;&nbsp;
+            <input type="text" placeholder="Last Name" name="last_name" [ngClass]="{'reginput': large,'reginput-smaller': medium, 'reginput-smallest': small}" ngModel/><br><br>
+            <p class="errmsg"*ngIf="emVal">*Email  is required!</p>
+            <input type="email" placeholder="name@email.com" name="email" [ngClass]="{'reginput-fullwidth': large,'reginput-fullwidth-smaller': medium, 'reginput-fullwidth-smallest': small}" ngModel/>
+            <button class="inputsidebutton"><i class="fa fa-at"></i></button><br><br>
+            <p class="errmsg"*ngIf="pwVal">*Password is required!</p>
+            <input type="password" placeholder="Enter your password" name="password" [ngClass]="{'reginput-fullwidth': large,'reginput-fullwidth-smaller': medium, 'reginput-fullwidth-smallest': small}" ngModel/>
+            <button class="inputsidebutton"><i class="fa fa-lock"></i></button><br><br>
+            <button type="submit" class="signinbutton">Sign up</button>
+            <br><br>
+            <div *ngIf="large||medium">
+                <span class="errmsg">{{this.emailErr}}</span> 
+            </div>
+            <div *ngIf="small" style="text-align: center;">
+                <span class="errmsg">{{this.emailErr}}</span> 
+            </div>
+        </form>
+        <br>
+        <div *ngIf="large">
+            <p><a class="tncanchor">Police privacy</a> and <a class="tncanchor">Terms of Use</a></p>
+        </div>
+        <div *ngIf="medium">
+            <p><a class="tncanchor">Police privacy</a> and <a class="tncanchor">Terms of Use</a></p>
+        </div>
+        <div *ngIf="small" style="text-align: center;">
+            <p><a class="tncanchor">Police privacy</a> and <a class="tncanchor">Terms of Use</a></p>
+        </div>
+    </div>
+    <div *ngIf="large" style="width: 50%; height: auto;float: right; padding: 0 10% 0 10%; ">
+        <img style="height: auto;"src="assets/mandogimg.png"/> 
+    </div>
+    <div *ngIf="medium" style="width: 50%; height: auto;float: right; padding: 0 10% 0 10%; ">
+        <img style="height: auto;"src="assets/mandogimgsmaller.png"/> 
+    </div>
+</div>
+<div *ngIf="large&&createSuccess" style="padding: 20% 10% 20% 10%; text-align: center;">
+    <h1>Successfully created</h1>
+    <br>
+    <br>
+    <button class="blue">Sign in</button>
+</div>
+<div *ngIf="medium&&createSuccess" style="padding: 25% 10% 20% 10%; text-align: center;">
+    <h1>Successfully created</h1>
+    <br>
+    <br>
+    <button class="blue">Sign in</button>
+</div>
+<div *ngIf="small&&createSuccess" style="padding: 50% 10% 30% 10%; text-align: center;">
+    <h1>Successfully created</h1>
+    <br>
+    <br>
+    <button routerLink="/login"class="blue">Sign in</button>
 </div>

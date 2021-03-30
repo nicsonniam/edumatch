@@ -14,6 +14,7 @@ import { PagesModule } from './components/pages/pages.module';
 import { HttpClientModule } from '@angular/common/http';
 import {ReactiveFormsModule} from '@angular/forms';
 import { FormsModule }   from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -24,6 +25,7 @@ import { FormsModule }   from '@angular/forms';
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
     PagesModule,
     FormsModule,

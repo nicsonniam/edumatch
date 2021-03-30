@@ -1,37 +1,39 @@
-<div class="maindiv">
+<div class="maindiv" >
     <div class="edumatchtop">
         <a routerLink="/" style="color: #0E6FFD; text-decoration: underline; font-size: 18px;text-decoration: underline;">Edumatch</a>
     </div>
-    <div class="dialogcontainer">
+    <div [ngClass]="{'dialogcontainer': large,
+                     'dialogcontainer-smaller': medium,
+                     'dialogcontainer-smallest': small}">
         <div class="dialogdiv">
             <br><br>
             <p style="color: #6D757D; font-size: 18px;">Sign In</p>
-            <p class="signintitle">Join our community</p>
+            <p [ngClass]="{'signintitle': large,'signintitle-smaller': medium, 'signintitle-smallest': small}">Join our community</p>
             <div class="loginform">
                 <input placeholder= "name@example.com" class="logininput"/>
                 <button class="inputsidebutton"><i class="fa fa-at"></i></button>
                 <br><br>
-                <input placeholder= "Enter your password" class="logininput"/>
+                <input placeholder= "Enter your password" class="logininput"/> 
                 <button class="inputsidebutton"><i class="fa fa-lock"></i></button>
-                <br><br>
+                <br><br> 
                 <button class="signinbutton">Sign In</button>
                 <br><br>
                 <p style="font-size: 14px;color: #6D757D;">or continue with</p>
                 <br><br>
                 <div class="socialmediabutton">
-                    <img style="width: 25px; height:25px;"src="assets/facebook.png"/>
-                    <p style="width:70%;font-size: 16px; color: #6D757D;">&nbsp;&nbsp;&nbsp;Sign In with Facebook</p>
+                    <img [ngClass]="{'signinwithimg': large,'signinwithimg-smaller': medium, 'signinwithimg-smallest': small}"src="assets/facebook.png"/>
+                    <p [ngClass]="{'signinwith': large,'signinwith-smaller': medium, 'signinwith-smallest': small}">&nbsp;&nbsp;&nbsp;Sign In with Facebook</p>
                 </div>
                 <div style="width: 100%; height: 10px;"></div>
                 <div class="socialmediabutton">
-                    <img style="width: 25px; height:25px;"src="assets/google.jpg"/>
-                    <p style="width:70%;font-size: 16px; color: #6D757D;">&nbsp;&nbsp;&nbsp;Sign In with Google</p>
+                    <img [ngClass]="{'signinwithimg': large,'signinwithimg-smaller': medium, 'signinwithimg-smallest': small}"src="assets/google.jpg"/>
+                    <p [ngClass]="{'signinwith': large,'signinwith-smaller': medium, 'signinwith-smallest': small}">&nbsp;&nbsp;&nbsp;Sign In with Google</p>
                 </div>
             </div>
         </div>
         <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
-        <div style="padding: 30px 20% 40px 20%;">
-            <div class="tncdiv">
+        <div style="padding: 30px 15% 40px 15%;">
+            <div [ngClass]="{'tncdiv': large,'tncdiv-smaller': medium, 'tncdiv-smallest': small}">
                 <p><a class="tncanchor">Police privacy</a> and <a class="tncanchor">Terms of Use</a></p>
             </div>
         </div>

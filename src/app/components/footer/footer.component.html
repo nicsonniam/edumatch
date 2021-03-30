@@ -1,6 +1,7 @@
-<div class = "footer">
+<!-- window width >= 1366-->
+<div class = "footer" *ngIf="innerWidth>1365">
     <br><br>
-    <h4 class="left" style="color: #0E6FFD;">EduMatch</h4>
+    <h4 class="edumatch">EduMatch</h4>
     <div class="right">
       <a class="footer-links">Shop</a>
       <a routerLink="/" class="footer-links">About</a>
@@ -15,4 +16,68 @@
       <img class="footer-img" src="assets/insta.png"/>
     </div>
     <br><br><br>
+</div>
+<!-- 1024 >= window width < 1366-->
+<div class = "footer" *ngIf="innerWidth>1023&&innerWidth<1366">
+  <br><br>
+  <h4 class="edumatch">EduMatch</h4>
+  <div class="right">
+    <a class="footer-links smaller">Shop</a>
+    <a routerLink="/" class="footer-links smaller">About</a>
+    <a class="footer-links smaller">Blog</a>
+    <a class="footer-links smaller">Pricing</a>
+  </div>
+  <br><br><br>
+  <p class="left" style="color:#6D757D">©2021. All rights reserved.</p>
+  <div class="right" style="padding-right: 20px;">
+    <img class="footer-img" src="assets/facebook.png"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img class="footer-img" src="assets/twitter.png"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img class="footer-img" src="assets/insta.png"/>
+  </div>
+  <br><br><br>
+</div>
+<!-- 768 >= window width < 1024-->
+<div class = "footer" *ngIf="innerWidth>767&&innerWidth<1024">
+  <br><br>
+  <h4 class="edumatch smaller" >EduMatch</h4>
+  <div class="right">
+    <a class="footer-links smallest">Shop</a>
+    <a routerLink="/" class="footer-links smallest">About</a>
+    <a class="footer-links smallest">Blog</a>
+    <a class="footer-links smallest">Pricing</a>
+  </div>
+  <br><br><br>
+  <p class="left" style="color:#6D757D">©2021. All rights reserved.</p>
+  <div class="right" style="padding-right: 20px;">
+    <img class="footer-img" src="assets/facebook.png"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img class="footer-img" src="assets/twitter.png"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img class="footer-img" src="assets/insta.png"/>
+  </div>
+  <br><br><br>
+</div>
+<!-- window width < 768-->
+<div class = "footer center" *ngIf="innerWidth<768">
+  <br><br>
+  <h4 class="edumatch mobile smaller" >EduMatch</h4>
+  <div class="center" *ngIf="innerWidth>429 &&innerWidth<768">
+    <a class="footer-links smallest wider">Shop</a>
+    <a routerLink="/" class="footer-links smallest wider">About</a>
+    <a class="footer-links smallest wider">Blog</a>
+    <a class="footer-links smallest wider">Pricing</a>
+  </div>
+  <div class="center" *ngIf="innerWidth<430">
+    <a class="footer-links smallest compressed">Shop</a>
+    <a routerLink="/" class="footer-links smallest compressed">About</a>
+    <a class="footer-links smallest compressed">Blog</a>
+    <a class="footer-links smallest compressed">Pricing</a>
+  </div>
+  <br>
+  <div class="center">
+    <img class="footer-img" src="assets/facebook.png"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img class="footer-img" src="assets/twitter.png"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img class="footer-img" src="assets/insta.png"/>
+  </div>
+  <br>
+  <p class="center" style="color:#6D757D">©2021. All rights reserved.</p>
+  <br><br><br>
 </div>

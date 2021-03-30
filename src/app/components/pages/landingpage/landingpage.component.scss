@@ -1,48 +1,103 @@
+.maindiv{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    height: auto;
+}
 .navbar{
-    padding-left: 10%;
-    padding-right: 10%;
+    padding:2% 10% 0 10%;
 }
 .mid{
     padding: 20px 7% 20px 7%;
+    &.mobile{
+        padding: 20px 0 20px 0;
+    }
 }
 .mid-td{
     width:50%; 
     height:auto;
     vertical-align: top;
+    &.mobile{
+        padding:0 10% 0 10%;
+    }
+}
+.lidiv{
+    width:fit-content;
+    text-align: center; 
+    vertical-align: middle; 
+    background-color: #0E6FFD;
+    border-radius: 10px; 
+    padding:0 10px 0 10px;
+}
+.loremipsum{
+    font-weight: 700; color: white;
+    &.smaller{
+        font-size: 12px;
+    }
+}
+.keyfeaturestitle{
+    font-weight: 900; 
+    font-size: 40px;
+    &.smaller{
+        font-size: 30px;
+    }
+    &.evensmaller{
+        font-size: 25px;
+    }
 }
 .keyfeatures{
     text-align: left; 
     padding-top: 100px;
+    height: auto;
+    width: 100%;
+    &.smaller{
+        padding-top: 75px;     
+    }
+    &.evensmaller{
+        padding-top: 35px;     
+    }
+    &.smallest{
+        padding-top: 25px;     
+    }
 }
 .keyfeatures-listitem{
     font-size: 25px; 
     line-height: 1; 
     font-weight: 700; 
-    padding-left: 80px;
+    padding: 0 0 0 80px;
+    &.smaller{
+        font-size: 18px; 
+        padding: 0 0 0 50px;
+        width: 70%;
+    }
+    &.smallest{
+        font-size: 16px; 
+        padding: 0 0 0 40px;
+        width: 70%;
+    }
 }
 .keyfeatures-listitem-filler{
-    padding-left: 80px;
+    padding: 0 0 40px 80px;
     font-size: 18px; 
     font-weight: 700;
     color: #798088;
-    width: 50%;
-}
-.feedbackinput{
-    padding-left: 10px;
-    border-style: none;
-    width: 100%;
-    height: 40px;
-    background-color: #F8F9FA;
-    font-size: 18px;
-    color: #8B9299;
-    font-weight: 400;
-    &.message{
-        height: 80px;
-        padding-bottom: 40px;
+    width: 65%;
+    &.smaller{
+        font-size: 14px; 
+        padding: 0 0 10px 50px;
+        width: 90%;
     }
-}
-.fileupload {
-    width: 100%;
+    &.evensmaller{
+        font-size: 14px; 
+        padding-left: 60px;
+        width: 90%;
+    }
+    &.smallest{
+        font-size: 13px; 
+        padding-left: 40px;
+        padding-bottom: 10px;
+        width: 100%;
+    }
 }
 ::-webkit-file-upload-button {
     border-style: none;
@@ -57,4 +112,85 @@
     color: white;
     border-radius: 5px;
     background-color: #0E6FFD;
+    &.mobile{
+        float: none;
+    };
+}
+.contactustitle{
+    line-height: 1; 
+    font-weight: 900; 
+    width:75%;
+    &.smaller{
+        font-size: 20px; 
+    }
+    &.smallest{
+        font-size: 18px; 
+        width:90%;
+    }
+    &.mobile{
+        width: 100%;
+    }
+}
+.contactus{
+    line-height: 1; 
+    font-size: 18px; 
+    font-weight: 700; 
+    color: #798088;
+    &.smaller{
+        font-size: 14px; 
+    }
+}
+.contactusinfo{
+    font-size: 18px;
+    &.smaller{
+        font-size: 14px; 
+    }
+}
+.custombullet{
+    float: left;
+    height: 25px;
+    &.smaller{
+        height: 18px;
+    }
+}
+.feedbackformlabel{
+    font-size: 18px;
+    &.left{
+        float:left;
+    }
+    &.bold{
+        font-weight: 900;
+    }
+    &.smaller{
+        font-size: 14px;
+    }
+}
+.feedbackinput{
+    padding-left: 10px;
+    border-style: none;
+    width: 100%;
+    height: 40px;
+    background-color: #F8F9FA;
+    font-size: 18px;
+    color: #8B9299;
+    font-weight: 400;
+    &.message{
+        height: 80px;
+        padding-bottom: 40px;
+    }
+    &.messagesmaller{
+        height: 60px;
+        padding-bottom: 30px;
+        font-size: 14px;
+    }
+    &.smaller{
+        font-size: 14px;
+        height: 30px;
+    }
+    &.mobile{
+        width: 95%;
+    }
+}
+.fileupload {
+    width: 100%;
 }

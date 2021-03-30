@@ -8,7 +8,14 @@
 }
 .dialogcontainer{
     width: 100%;
-    padding: 0 33% 40px 33%;
+    padding: 0 33% 100px 33%;
+}
+.dialogcontainer-smaller{
+    width: 100%;
+    padding: 0 20% 40px 20%;
+}
+.dialogcontainer-smallest{
+    width: 100%;
 }
 .dialogdiv{
     text-align: center;
@@ -22,6 +29,45 @@
     padding: 0;
     margin: 0;
 }
+.tncdiv-smaller>a,p{
+    display: inline-block;
+    width: 90%;
+    padding: 0;
+    margin: 0;
+}
+.tncdiv-smallest>a,p{
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.signinwith{
+    width:70%;
+    font-size: 16px; 
+    color: #6D757D;
+}
+.signinwith-smaller{
+    width:70%;
+    font-size: 15px; 
+    color: #6D757D;
+}
+.signinwith-smallest{
+    width:70%;
+    font-size: 14px; 
+    color: #6D757D;
+}
+.signinwithimg{
+    width: 25px; 
+    height:25px;
+}
+.signinwithimg-smaller{
+    width: 20px; 
+    height:20px;
+}
+.signinwithimg-smallest{
+    width: 18px; 
+    height:18px;
+}
 .tncanchor{
     color:#0E6FFD;
     text-decoration: underline;
@@ -32,13 +78,25 @@
     width: 100%; 
     padding: 10px 0 30px 0;
 }
+.signintitle-smaller{
+    color: black; 
+    font-size: 28px; 
+    width: 100%; 
+    padding: 10px 0 30px 0;
+}
+.signintitle-smallest{
+    color: black; 
+    font-size: 28px; 
+    width: 100%; 
+    padding: 10px 0 30px 0;
+}
 .loginform{
     padding: 0 20px 0 20px;
     height: 300px;
 }
 .logininput{
     padding-left: 10px;
-    width: 92%;
+    width: 90%;
     height:40px;
     border-style: solid;
     border-color: #E9ECEF;
@@ -48,11 +106,13 @@
     border-radius: 5px 0 0 5px;
 }
 .inputsidebutton{
-    width:8%;
+    width:10%;
+    text-align: center;
     float: right; 
     height: 40px; 
     border-style: none;
     margin:0;
+    padding: 1px 1px 1px 1px;
     border-radius: 0 5px 5px 0;
     cursor: default;
 }

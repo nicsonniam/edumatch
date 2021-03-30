@@ -1,12 +1,87 @@
 .maindiv{
-    
-} 
+    height: auto; 
+    width: 100%; 
+    overflow: hidden;
+}
+.maindiv2{
+    height: auto; 
+    width: 100%; 
+    overflow: hidden;
+}
+.maindiv-mobile{
+    height: auto; 
+    width: 100%; 
+    padding:0 10% 0 10%;
+}
+.formdiv{
+    float:left; 
+    padding: 5% 10% 5% 10%; 
+    width: 50%;
+}
+.formdiv-smaller{
+    float:left; 
+    padding: 5% 5% 5% 10%; 
+    width: 50%;
+}
+.formdiv-smallest{
+    float:left; 
+    padding: 5% 10% 5% 10%; 
+    width: 100%;
+}
+.formtitle{
+    font-size: 30px; 
+    font-weight: 400;
+}
+.formtitle-smaller{
+    font-size: 29px; 
+    font-weight: 400;
+}
+.formtitle-smallest{
+    font-size: 27px; 
+    font-weight: 400;
+}
 .fakebutton{
     padding-left:0px; 
     text-decoration: underline; 
     border-style: none; 
     color: #0E6FFD; 
     float: left;
+}
+.reginput-fullwidth{
+    padding-left: 10px;
+    border-style: solid;
+    border-color: #E9ECEF;
+    border-radius: 5px 0 0 5px;
+    border-width: 1px;
+    height: 40px;
+    font-size: 18px;
+    color: gray;
+    font-weight: 400;
+    width: 88%;   
+}
+.reginput-fullwidth-smaller{
+    padding-left: 10px;
+    border-style: solid;
+    border-color: #E9ECEF;
+    border-radius: 5px 0 0 5px;
+    border-width: 1px;
+    height: 40px;
+    font-size: 14px;
+    color: gray;
+    font-weight: 400;
+    width: 88%
+}
+.reginput-fullwidth-smallest{
+    padding-left: 10px;
+    border-style: solid;
+    border-color: #E9ECEF;
+    border-radius: 5px 0 0 5px;
+    border-width: 1px;
+    height: 40px;
+    font-size: 14px;
+    color: gray;
+    font-weight: 400;
+    width: 88%
 }
 .reginput{
     padding-left: 10px;
@@ -16,21 +91,42 @@
     border-width: 1px;
     height: 40px;
     font-size: 18px;
-    width: 48%;
     color: gray;
     font-weight: 400;
-    &.fullwidth{
-        width: 91%;
-        border-radius: 5px 0 0 5px;
-    }
-} 
+    width: 45%;   
+}
+.reginput-smaller{
+    padding-left: 10px;
+    border-style: solid;
+    border-color: #E9ECEF;
+    border-radius: 5px;
+    border-width: 1px;
+    height: 40px;
+    font-size: 14px;
+    width: 45%;
+    color: gray;
+    font-weight: 400;
+}
+.reginput-smallest{
+    padding-left: 10px;
+    border-style: solid;
+    border-color: #E9ECEF;
+    border-radius: 5px;
+    border-width: 1px;
+    height: 40px;
+    font-size: 14px;
+    color: gray;
+    font-weight: 400;
+    width: 100%;
+}  
 .inputsidebutton{
-    width:9%;
+    width:12%;
     float: right; 
     height: 40px; 
     border-style: none;
     margin:0;
     border-radius: 0 5px 5px 0;
+    padding: 1px 1px 1px 1px;
     cursor: default;
     background-color: #E9ECEF;
 }
@@ -43,4 +139,8 @@
 .tncanchor{
     color:#0E6FFD;
     text-decoration: underline;
+}
+.errmsg{
+    font-size: 12px;
+    color: red;
 }
