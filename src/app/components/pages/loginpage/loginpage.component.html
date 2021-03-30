@@ -10,14 +10,22 @@
             <p style="color: #6D757D; font-size: 18px;">Sign In</p>
             <p [ngClass]="{'signintitle': large,'signintitle-smaller': medium, 'signintitle-smallest': small}">Join our community</p>
             <div class="loginform">
-                <input placeholder= "name@example.com" class="logininput"/>
-                <button class="inputsidebutton"><i class="fa fa-at"></i></button>
-                <br><br>
-                <input placeholder= "Enter your password" class="logininput"/> 
-                <button class="inputsidebutton"><i class="fa fa-lock"></i></button>
-                <br><br> 
-                <button class="signinbutton">Sign In</button>
-                <br><br>
+                <form #login="ngForm" (ngSubmit)="logIn(login)">
+                    <p class="errmsg alignleft" *ngIf="emVal">*Email required!</p>
+                    <input type="text" name="email" placeholder="name@example.com" class="logininput" ngModel/>
+                    <button class="inputsidebutton"><i class="fa fa-at"></i></button>
+                    <br><br>
+                    <p class="errmsg alignleft" *ngIf="pwVal">*Password required!</p>
+                    <input type="password" name="password" placeholder= "Enter your password" class="logininput" ngModel/> 
+                    <button class="inputsidebutton"><i class="fa fa-lock"></i></button>
+                    <br><br>
+                    <span class="errmsg">{{this.errMessage}}</span>
+                    <div *ngIf="this.errMessage!==''">
+                        <br>
+                    </div> 
+                    <button type="submit" class="signinbutton">Sign In</button>
+                    <br><br>
+                </form>
                 <p style="font-size: 14px;color: #6D757D;">or continue with</p>
                 <br><br>
                 <div class="socialmediabutton">

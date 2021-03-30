@@ -27,6 +27,13 @@ body {
 .center{
     text-align: center;
 }
+.errmsg{
+    font-size: 12px;
+    color: red;
+    &.alignleft{
+        text-align: left;
+    }
+}
 button{
     border-color: #0E6FFD;
     border-width: 1px;
