@@ -88,7 +88,7 @@ export class RegpageComponent implements OnInit {
     if(this.fnVal==false && this.lnVal==false && this.emVal==false && this.pwVal==false){
       this.allFields=true;
     }
-    console.log(this.allFields);
+    //console.log(this.allFields);
     if(this.allFields){
       var payload = {
         "password":password,
